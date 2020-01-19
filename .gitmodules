@@ -1,0 +1,3 @@
+[submodule "prog-cs-8-examples"]
+	path = prog-cs-8-examples
+	url = https://github.com/idg10/prog-cs-8-examples.git
