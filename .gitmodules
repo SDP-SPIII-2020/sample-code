@@ -1,3 +1,6 @@
 [submodule "prog-cs-8-examples"]
 	path = prog-cs-8-examples
 	url = https://github.com/idg10/prog-cs-8-examples.git
+[submodule "DI-Webcast"]
+	path = DI-Webcast
+	url = https://github.com/miguelcastro67/DI-Webcast.git
