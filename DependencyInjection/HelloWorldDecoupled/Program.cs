@@ -15,7 +15,7 @@ namespace HelloWorldDecoupled
 
     class HelloWorldMessageProvider
     {
-        internal string Message { get; }
+        internal string Message { get; set; }
 
         public HelloWorldMessageProvider(string Message)
         {
