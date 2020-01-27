@@ -11,5 +11,7 @@
 	Code accompanying the video by Claudio Bernasconi.
 + `TestingExample`
 	Illustrating the use of the `MSTest` package.
++ `Autofac-Examples`  
+	Illustrating the use of this dependency injection container framework.
 + `Java` - examples
 + ...

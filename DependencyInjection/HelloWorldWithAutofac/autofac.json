@@ -1,0 +1,21 @@
+﻿{
+  "defaultAssembly": "HelloWorldWithAutofac",
+  "components": [
+    {
+      "type": "HelloWorldWithAutofac.HelloWorldMessageProvider",
+      "services": [
+        {
+          "type": "HelloWorldWithAutofac.IMessageProvider"
+        }
+      ]
+    },
+    {
+      "type": "HelloWorldWithAutofac.StandardOutMessageRenderer",
+      "services": [
+        {
+          "type": "HelloWorldWithAutofac.IMessageRenderer"
+        }
+      ]
+    }
+  ]
+}
