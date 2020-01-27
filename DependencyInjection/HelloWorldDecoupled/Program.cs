@@ -8,8 +8,8 @@ namespace HelloWorldDecoupled
         {
             StandardOutMessageRenderer mr = new StandardOutMessageRenderer();
             HelloWorldMessageProvider mp = new HelloWorldMessageProvider("Hello World");
-            mr.MessageProvider = mp;
-            mr.render();
+            //mr.MessageProvider = mp;
+            mr.Render();
         }
     }
 
@@ -25,10 +25,9 @@ namespace HelloWorldDecoupled
 
     class StandardOutMessageRenderer
     {
-
         internal HelloWorldMessageProvider MessageProvider { get; set; }
 
-        public void render()
+        public void Render()
         {
             if (MessageProvider == null)
             {
