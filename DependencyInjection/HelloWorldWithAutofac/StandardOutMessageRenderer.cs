@@ -5,6 +5,11 @@ namespace HelloWorldWithAutofac
     {
         public IMessageProvider MessageProvider { get; set; }
 
+        public StandardOutMessageRenderer(IMessageProvider provider)
+        {
+            MessageProvider = provider;
+        }
+
         public void Render()
         {
             if (MessageProvider == null)
