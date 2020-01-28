@@ -4,14 +4,12 @@
 	Source code from "Programming C# 8.0" by Ian Griffiths  
 	Published by O'Reilly Media, Inc., 2019
 + `DependencyInjection`  
-	The code from class.
+	The code from class - `HelloWorld`.
 + `DI-Webcast`  
 	Code accompanying the video by Miguel Castro.
 + `DI-Bernasconi`  
 	Code accompanying the video by Claudio Bernasconi.
 + `TestingExample`
 	Illustrating the use of the `MSTest` package.
-+ `Autofac-Examples`  
-	Illustrating the use of this dependency injection container framework.
 + `Java` - examples
 + ...
