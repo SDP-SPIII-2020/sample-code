@@ -136,7 +136,5 @@ namespace HelloWorldWithAutofac
                 Console.ReadKey();
             }
         }
-    }
-
-
+    } 
 }
