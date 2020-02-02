@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/git,rider,csharp,dotnetcore,visualstudio,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=git,rider,csharp,dotnetcore,visualstudio,visualstudiocode
+# Created by https://www.gitignore.io/api/git,java,rider,csharp,sublimetext,visualstudio,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=git,java,rider,csharp,sublimetext,visualstudio,visualstudiocode
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -352,16 +352,6 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-### DotnetCore ###
-# .NET Core build folders
-/bin
-/obj
-
-# Common node modules locations
-/node_modules
-/wwwroot/node_modules
-
-
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
@@ -376,6 +366,30 @@ MigrationBackup/
 *_BASE_*.txt
 *_LOCAL_*.txt
 *_REMOTE_*.txt
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
 ### Rider ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -446,6 +460,38 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+### SublimeText ###
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
+*.sublime-workspace
+
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
+# *.sublime-project
+
+# SFTP configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
 
 ### VisualStudioCode ###
 .vscode/*
@@ -614,4 +660,4 @@ fabric.properties
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 
-# End of https://www.gitignore.io/api/git,rider,csharp,dotnetcore,visualstudio,visualstudiocode
+# End of https://www.gitignore.io/api/git,java,rider,csharp,sublimetext,visualstudio,visualstudiocode
