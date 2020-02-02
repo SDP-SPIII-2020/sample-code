@@ -27,6 +27,30 @@
         <e p="Program.cs" t="Include" />
       </e>
       <e p="Feb02.sln" t="IncludeFlat" />
+      <e p="GenericConstraints" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="GenericConstraints.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="GenericConstraints.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="GenericMultipleConstraints" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="GenericMultipleConstraints.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="GenericMultipleConstraints.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="Nullable" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Nullable.csproj" t="IncludeRecursive" />
@@ -51,6 +75,18 @@
         </e>
         <e p="Program.cs" t="Include" />
         <e p="PropertiesExample.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SimpleGenerics" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SimpleGenerics.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="SimpleGenerics.csproj" t="IncludeRecursive" />
       </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
