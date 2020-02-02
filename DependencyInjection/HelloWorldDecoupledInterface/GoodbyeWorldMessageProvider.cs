@@ -1,13 +1,12 @@
-﻿using System;
-namespace HelloWorldDecoupledInterface
+﻿namespace HelloWorldDecoupledInterface
 {
-    class GoodbyeWorldMessageProvider : IMessageProvider
+    internal class GoodbyeWorldMessageProvider : IMessageProvider
     {
-        public string Message { get; set; }
-
         public GoodbyeWorldMessageProvider()
         {
             Message = "Goodbye World!";
         }
+
+        public string Message { get; set; }
     }
 }

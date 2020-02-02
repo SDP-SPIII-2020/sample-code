@@ -1,7 +1,6 @@
-﻿using System;
-namespace HelloWorldDecoupledInterface
+﻿namespace HelloWorldDecoupledInterface
 {
-    interface IMessageProvider
+    internal interface IMessageProvider
     {
         string Message { get; set; }
     }

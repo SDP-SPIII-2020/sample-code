@@ -1,22 +1,23 @@
 ﻿using System;
+
 namespace HelloWorldWithAutofac
 {
-    class StandardOutMessageRenderer : IMessageRenderer
+    internal class StandardOutMessageRenderer : IMessageRenderer
     {
-        public IMessageProvider MessageProvider { get; set; }
-
         public StandardOutMessageRenderer(IMessageProvider provider)
         {
             MessageProvider = provider;
         }
 
+        public IMessageProvider MessageProvider { get; set; }
+
         public void Render()
         {
             if (MessageProvider == null)
             {
-                throw new Exception("You must set the property messageProvider of class:"
-                        + this.GetType().ToString());
+                throw new Exception($"You must set the property messageProvider of class: {GetType()}");
             }
+
             Console.WriteLine(MessageProvider.Message);
         }
     }

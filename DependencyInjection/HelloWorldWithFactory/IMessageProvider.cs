@@ -1,7 +1,6 @@
-﻿using System;
-namespace HelloWorldWithFactory
+﻿namespace HelloWorldWithFactory
 {
-    interface IMessageProvider
+    internal interface IMessageProvider
     {
         string Message { get; set; }
     }

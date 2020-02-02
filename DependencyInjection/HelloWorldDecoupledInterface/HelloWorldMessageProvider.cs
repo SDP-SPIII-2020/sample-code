@@ -1,13 +1,12 @@
-﻿using System;
-namespace HelloWorldDecoupledInterface
+﻿namespace HelloWorldDecoupledInterface
 {
-    class HelloWorldMessageProvider : IMessageProvider
+    internal class HelloWorldMessageProvider : IMessageProvider
     {
-        public string Message { get; set; }
-
         public HelloWorldMessageProvider(string msg)
         {
             Message = msg;
         }
+
+        public string Message { get; set; }
     }
 }

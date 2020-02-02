@@ -1,9 +1,8 @@
-﻿using System;
-namespace HelloWorldWithFactory
+﻿namespace HelloWorldWithFactory
 {
-    interface IMessageRenderer
+    internal interface IMessageRenderer
     {
-        abstract IMessageProvider MessageProvider { get; set; }
-        abstract void Render();
+        IMessageProvider MessageProvider { get; set; }
+        void Render();
     }
 }

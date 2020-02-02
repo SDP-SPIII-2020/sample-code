@@ -1,23 +1,20 @@
 ﻿#define FIVE
 
-using Autofac;
-using Autofac.Configuration;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Diagnostics;
-using System.IO;
 using System.Reflection;
-using System.Runtime.Loader;
+using Autofac;
 
 namespace HelloWorldWithAutofac
 {
-    class Program
+    internal class Program
     {
         private static IContainer Container { get; set; }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             #region 01 - avoid new
+
 #if ONE
             var builder = new ContainerBuilder();
             builder.RegisterType<HelloWorldMessageProvider>().As<IMessageProvider>();
@@ -32,9 +29,11 @@ namespace HelloWorldWithAutofac
                 mr.Render();
             }
 #endif
+
             #endregion
 
             #region 02 - look for class in assembly
+
 #if TWO
             var dataAccess = Assembly.GetExecutingAssembly();
             var builder = new ContainerBuilder();
@@ -56,9 +55,11 @@ namespace HelloWorldWithAutofac
                 mr.Render();
             }
 #endif
+
             #endregion
 
             #region 03 with config file
+
 #if THREE
             var config = new ConfigurationBuilder()
                 .AddJsonFile("autofac.json")
@@ -83,9 +84,11 @@ namespace HelloWorldWithAutofac
                 Console.Error.WriteLine("Error during configuration demonstration: {0}", ex);
             }
 #endif
+
             #endregion
 
             #region 04 modules
+
 #if FOUR
             var builder = new ContainerBuilder();
             builder.RegisterModule<ProgramModule>();
@@ -106,9 +109,11 @@ namespace HelloWorldWithAutofac
                 Console.Error.WriteLine("Error during configuration demonstration: {0}", ex);
             }
 #endif
+
             #endregion
 
             #region 05 autoscan
+
 #if FIVE
             var builder = new ContainerBuilder();
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly()).AsSelf().AsImplementedInterfaces();
@@ -128,6 +133,7 @@ namespace HelloWorldWithAutofac
             }
 
 #endif
+
             #endregion
 
             if (Debugger.IsAttached)
@@ -136,5 +142,5 @@ namespace HelloWorldWithAutofac
                 Console.ReadKey();
             }
         }
-    } 
+    }
 }

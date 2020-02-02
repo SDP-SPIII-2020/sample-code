@@ -2,7 +2,7 @@
 
 namespace HelloWorldWithAutofac
 {
-    public class ProgramModule: Module
+    public class ProgramModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {

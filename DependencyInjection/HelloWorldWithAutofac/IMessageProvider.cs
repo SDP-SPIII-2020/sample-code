@@ -1,7 +1,6 @@
-﻿using System;
-namespace HelloWorldWithAutofac
+﻿namespace HelloWorldWithAutofac
 {
-    interface IMessageProvider
+    internal interface IMessageProvider
     {
         string Message { get; set; }
     }

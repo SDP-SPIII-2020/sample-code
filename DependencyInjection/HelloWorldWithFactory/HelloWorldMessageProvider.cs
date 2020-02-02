@@ -1,13 +1,12 @@
-﻿using System;
-namespace HelloWorldWithFactory
+﻿namespace HelloWorldWithFactory
 {
-    class HelloWorldMessageProvider : IMessageProvider
+    internal class HelloWorldMessageProvider : IMessageProvider
     {
-        public string Message { get; set; }
-
         public HelloWorldMessageProvider()
         {
             Message = "Hello World";
         }
+
+        public string Message { get; set; }
     }
 }

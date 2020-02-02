@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace HelloWorldDecoupledInterface
+﻿namespace HelloWorldDecoupledInterface
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IMessageRenderer mr = new StandardOutMessageRenderer();
             IMessageProvider mp = new HelloWorldMessageProvider("Hello World");

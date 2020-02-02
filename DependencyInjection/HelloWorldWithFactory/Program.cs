@@ -1,17 +1,13 @@
-﻿using System;
-
-namespace HelloWorldWithFactory
+﻿namespace HelloWorldWithFactory
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            IMessageRenderer mr = MessageSupportFactory.MessageRenderer;
-            IMessageProvider mp = MessageSupportFactory.MessageProvider;
+            var mr = MessageSupportFactory.MessageRenderer;
+            var mp = MessageSupportFactory.MessageProvider;
             mr.MessageProvider = mp;
             mr.Render();
         }
     }
-
-    
 }
