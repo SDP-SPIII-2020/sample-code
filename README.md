@@ -18,6 +18,6 @@
 
 ### Credits
 
-I forget where most of these examples came from so I'll just list some of the people I've collaborated with or who have provided sample code; apologies to anyone I've forgotten.
+I forget where most of these examples came from (unless they are credited above) so I'll just list some of the people I've collaborated with or who have provided sample code; apologies to anyone I've forgotten.
 
 + ...
