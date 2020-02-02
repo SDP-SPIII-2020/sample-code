@@ -20,9 +20,9 @@ namespace HelloWorldWithFactory
 
             // get instance of class
             var t = Type.GetType(classRenderer);
-            MessageRenderer = (IMessageRenderer)Activator.CreateInstance(t);
+            MessageRenderer = Activator.CreateInstance(t) as IMessageRenderer ;
             t = Type.GetType(classProvider);
-            MessageProvider = (IMessageProvider)Activator.CreateInstance(t);
+            MessageProvider = Activator.CreateInstance(t) as IMessageProvider;
         }
     }
 }
