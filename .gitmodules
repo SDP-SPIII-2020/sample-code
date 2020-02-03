@@ -7,3 +7,6 @@
 [submodule "Examples"]
 	path = Examples
 	url = https://github.com/autofac/Examples.git
+[submodule "try-samples"]
+	path = try-samples
+	url = https://github.com/dotnet/try-samples.git

@@ -9,8 +9,6 @@
 	Code accompanying the video by Miguel Castro.
 + `DI-Bernasconi`  
 	Code accompanying the video by Claudio Bernasconi.
-+ `TestingExample`
-	Illustrating the use of the `MSTest` package.
 + `help-sessions`  
 	Code from the online help sessions.
 + `Java` - examples
