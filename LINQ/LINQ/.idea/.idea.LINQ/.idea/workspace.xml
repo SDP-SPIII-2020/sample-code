@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44f58abb-1d29-4e1a-9aeb-d4b2cbd4d9c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.LINQ/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.LINQ/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.LINQ/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.LINQ/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DependencyInjection/DependencyInjection.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../DependencyInjection/DependencyInjection.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../prog-cs-8-examples" beforeDir="false" afterPath="$PROJECT_DIR$/../../prog-cs-8-examples" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../try-samples" beforeDir="false" afterPath="$PROJECT_DIR$/../../try-samples" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +36,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="LINQ" type="DotNetProject" factoryName=".NET Project">
@@ -83,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580742100734</updated>
-      <workItem from="1580742102278" duration="1254000" />
+      <workItem from="1580742102278" duration="1780000" />
     </task>
     <servers />
   </component>
@@ -104,21 +106,21 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1476" height="248" key="GridCell.Tab.0.bottom" timestamp="1580743460150">
+    <state width="1476" height="248" key="GridCell.Tab.0.bottom" timestamp="1580777121888">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1476" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1580743460150" />
-    <state width="1476" height="248" key="GridCell.Tab.0.center" timestamp="1580743460149">
+    <state width="1476" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
+    <state width="1476" height="248" key="GridCell.Tab.0.center" timestamp="1580777121888">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1476" height="248" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1580743460149" />
-    <state width="1476" height="248" key="GridCell.Tab.0.left" timestamp="1580743460149">
+    <state width="1476" height="248" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
+    <state width="1476" height="248" key="GridCell.Tab.0.left" timestamp="1580777121888">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1476" height="248" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1580743460149" />
-    <state width="1476" height="248" key="GridCell.Tab.0.right" timestamp="1580743460150">
+    <state width="1476" height="248" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
+    <state width="1476" height="248" key="GridCell.Tab.0.right" timestamp="1580777121888">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1476" height="248" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1580743460150" />
+    <state width="1476" height="248" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
   </component>
 </project>
