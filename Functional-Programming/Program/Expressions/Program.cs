@@ -16,8 +16,17 @@ namespace Expressions
 #if OLD
         static string GetSalutation(int hour)
         {
-            var salutation = (hour < 12) ? "Good Morning" : "Good Afternoon";
-            return salutation;
+            string salutation; // placeholder value
+            if (hour < 12)
+            {
+                salutation = "Good Morning";
+            }
+            else
+            {
+                salutation = "Good Afternoon";
+            }
+
+            return salutation; // return mutated
         }
 #else
         public static string GetSalutation(int hour) =>
