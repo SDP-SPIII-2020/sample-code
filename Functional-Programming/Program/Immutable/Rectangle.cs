@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace FunctionalProgramming
+namespace Immutable
 {
     // Before
     public class Rectangle
@@ -33,7 +33,7 @@ namespace FunctionalProgramming
             new ImmutableRectangle(Length + length, Height + height);
     }
 
-    class Harness
+    internal static class Harness
     {
         static void Main()
         {

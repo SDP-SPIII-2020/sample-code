@@ -15,14 +15,14 @@ using System.Linq;
 
 namespace LINQ
 {
-    class Program
+    internal static class Program
     {
         static void Main(string[] args)
         {
-            List<int> collection = new List<int> {1, 2, 3, 4, 5};
+           var collection = new List<int> {1, 2, 3, 4, 5};
 
             // Imperative style of programming is verbose
-            List<int> results = new List<int>();
+            var results = new List<int>();
             foreach (var num in collection)
             {
                 if (num % 2 != 0)

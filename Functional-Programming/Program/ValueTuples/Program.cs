@@ -7,7 +7,7 @@
 */
 namespace ValueTuples
 {
-    class Program
+    internal static class Program
     {
         static (double lat, double lng) GetCoordinates(string query)
         {

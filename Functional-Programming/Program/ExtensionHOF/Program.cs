@@ -7,10 +7,10 @@ namespace Reusable
     {
         static int Count<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
         {
-            int count = 0;
-            foreach (TSource element in source)
+            var count = 0;
+            foreach (var element in source)
             {
-                checked
+                checked // for overflow
                 {
                     if (predicate(element))
                     {
