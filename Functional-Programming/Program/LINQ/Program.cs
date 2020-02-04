@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*
+ * Quantify — All, Any, Contains
+ * Filter — Where, OfType
+ * Project/Transform — Select, SelectMany, Zip
+ * Criteria/Set — Distinct, Except, Intersect, Union
+ * Sorting — OrderBy, OrderByDecending, ThenBy, ThenByDecending, Reverse
+ * Aggregation — Aggregate, Average, Count, LonCount, Max, Min, Sum
+ * Partition/Join — Skip, SkipWhile, Take, TakeWhile, Join, GroupJoin
+ * Grouping — GroupBy, ToLookup
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 

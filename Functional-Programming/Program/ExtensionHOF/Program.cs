@@ -5,7 +5,7 @@ namespace Reusable
 {
     static class Program
     {
-        public static int Count<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
+        static int Count<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
         {
             int count = 0;
             foreach (TSource element in source)
@@ -20,6 +20,15 @@ namespace Reusable
             }
 
             return count;
+        }
+
+        static void Main()
+        {
+            bool[] bools = {false, true, false, false};
+            var f = bools.Count(bln => bln == false); // out = 3
+            Console.WriteLine(f);
+            var t = bools.Count(bln => bln == true); // out =1
+            Console.WriteLine(t);
         }
     }
 }

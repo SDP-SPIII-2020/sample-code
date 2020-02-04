@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Immutable", "Immutable\Immu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expressions", "Expressions\Expressions.csproj", "{B1B5F3E7-3488-48CE-A4E2-36C623D12CA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusable", "Reusable\Reusable.csproj", "{4CCAB6CB-4582-4207-8F33-C177C6F817B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionHOF", "ExtensionHOF\ExtensionHOF.csproj", "{4CCAB6CB-4582-4207-8F33-C177C6F817B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composition", "Composition\Composition.csproj", "{DAB8E623-28F6-40FA-9B5D-67DEE29FBBA9}"
 EndProject
@@ -13,6 +13,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yield", "Yield\Yield.csproj", "{085BBA98-E935-4979-BCDD-5D12EF44BCD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{D8CFDFFB-446A-4815-A6CD-77A37A0EE9FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTuples", "ValueTuples\ValueTuples.csproj", "{3C529F3B-2F6C-475A-9714-740F92F55490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionDelegates", "FunctionDelegates\FunctionDelegates.csproj", "{092809B3-0400-4ABB-937E-305C8BCA68D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +52,13 @@ Global
 		{D8CFDFFB-446A-4815-A6CD-77A37A0EE9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8CFDFFB-446A-4815-A6CD-77A37A0EE9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8CFDFFB-446A-4815-A6CD-77A37A0EE9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C529F3B-2F6C-475A-9714-740F92F55490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C529F3B-2F6C-475A-9714-740F92F55490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C529F3B-2F6C-475A-9714-740F92F55490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C529F3B-2F6C-475A-9714-740F92F55490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092809B3-0400-4ABB-937E-305C8BCA68D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092809B3-0400-4ABB-937E-305C8BCA68D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092809B3-0400-4ABB-937E-305C8BCA68D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092809B3-0400-4ABB-937E-305C8BCA68D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

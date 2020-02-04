@@ -38,6 +38,30 @@
         </e>
         <e p="Program.cs" t="Include" />
       </e>
+      <e p="ExtensionHOF" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ExtensionHOF.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ExtensionHOF.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="FunctionDelegates" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FunctionDelegates.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="FunctionDelegates.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
       <e p="Immutable" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Immutable.csproj" t="IncludeRecursive" />
@@ -64,17 +88,17 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Program.sln" t="IncludeFlat" />
-      <e p="Reusable" t="IncludeRecursive">
+      <e p="ValueTuples" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="Reusable.AssemblyInfo.cs" t="Include" />
+              <e p="ValueTuples.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="Reusable.csproj" t="IncludeRecursive" />
+        <e p="ValueTuples.csproj" t="IncludeRecursive" />
       </e>
       <e p="Yield" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
