@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44f58abb-1d29-4e1a-9aeb-d4b2cbd4d9c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Functional-Programming/Program/Composition/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Functional-Programming/Program/Composition/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Functional-Programming/Program/Expressions/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Functional-Programming/Program/Expressions/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Functional-Programming/Program/Immutable/Rectangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Functional-Programming/Program/Immutable/Rectangle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Functional-Programming/Program/LINQ/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Functional-Programming/Program/LINQ/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LINQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LINQ/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../prog-cs-8-examples" beforeDir="false" afterPath="$PROJECT_DIR$/../../prog-cs-8-examples" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../try-samples" beforeDir="false" afterPath="$PROJECT_DIR$/../../try-samples" afterDir="false" />
     </list>
@@ -86,41 +91,52 @@
       <option name="presentableId" value="Default" />
       <updated>1580742100734</updated>
       <workItem from="1580742102278" duration="1780000" />
+      <workItem from="1581021366596" duration="1109000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1476" height="248" key="GridCell.Tab.0.bottom" timestamp="1580777121888">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1238" height="178" key="GridCell.Tab.0.bottom" timestamp="1581064711108">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581021875441" />
+    <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581064711108" />
     <state width="1476" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
-    <state width="1476" height="248" key="GridCell.Tab.0.center" timestamp="1580777121888">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1238" height="178" key="GridCell.Tab.0.center" timestamp="1581064711106">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1238" height="178" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581021875440" />
+    <state width="1238" height="178" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581064711106" />
     <state width="1476" height="248" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
-    <state width="1476" height="248" key="GridCell.Tab.0.left" timestamp="1580777121888">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1238" height="178" key="GridCell.Tab.0.left" timestamp="1581064711106">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1238" height="178" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581021875439" />
+    <state width="1238" height="178" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581064711106" />
     <state width="1476" height="248" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
-    <state width="1476" height="248" key="GridCell.Tab.0.right" timestamp="1580777121888">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1238" height="178" key="GridCell.Tab.0.right" timestamp="1581064711107">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1238" height="178" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581021875440" />
+    <state width="1238" height="178" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581064711107" />
     <state width="1476" height="248" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1580777121888" />
   </component>
 </project>

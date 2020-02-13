@@ -1,3 +1,5 @@
+//#define OLD
+
 using System;
 using System.Reflection;
 
@@ -6,8 +8,8 @@ namespace Immutable
     // Before
     public class Rectangle
     {
-        int Length { get; set; }
-        int Height { get; set; }
+        internal int Length { get; set; }
+        internal int Height { get; set; }
 
         public void Grow(int length, int height)
         {
