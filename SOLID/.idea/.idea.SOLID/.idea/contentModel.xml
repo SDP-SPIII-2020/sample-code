@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\keith\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\keith\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SOLID.1146528218.00" t="ExcludeRecursive" />
+    <e p="C:\Users\keith\RiderProjects\SOLID" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SOLID" t="IncludeRecursive">
+        <e p="SOLID.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SOLID.sln" t="IncludeFlat" />
+      <e p="SOLID02" t="IncludeRecursive">
+        <e p="SOLID02.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SOLID3" t="IncludeRecursive">
+        <e p="SOLID3.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SOLID4" t="IncludeRecursive">
+        <e p="SOLID4.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SOLID5" t="IncludeRecursive">
+        <e p="AreaCalculator.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Circle.cs" t="Include" />
+        <e p="ICircle.cs" t="Include" />
+        <e p="IRectangle.cs" t="Include" />
+        <e p="IShape.cs" t="Include" />
+        <e p="ISquare.cs" t="Include" />
+        <e p="NewRectangle.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SOLID5.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Rectangle.cs" t="Include" />
+        <e p="ShapeFactory.cs" t="Include" />
+        <e p="SOLID5.csproj" t="IncludeRecursive" />
+        <e p="Square.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
