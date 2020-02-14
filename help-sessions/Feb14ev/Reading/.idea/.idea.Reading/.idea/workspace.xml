@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfee00a1-bb18-4441-a9f3-05fbf1784612" name="Default Changelist" comment="" />
+    <list default="true" id="dfee00a1-bb18-4441-a9f3-05fbf1784612" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DIApp/ColoredRectangle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DIApp/IColor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DIApp/IColorRectangle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DIApp/RectangleFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DIApp/YetAnotherRectangle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delegates/Delegates.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delegates/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UptownFunc/Program.fs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UptownFunc/UptownFunc.fsproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UptownFuncc/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UptownFuncc/UptownFuncc.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Reading/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reading/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Reading/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reading/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reading.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Reading.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,25 +26,51 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Aggregate/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/Rectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Delegates/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UptownFunc/Program.fs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UptownFuncc/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/ColoredRectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/IColorRectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/IColor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/YetAnotherRectangle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Reading/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Aggregate/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/RectangleFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/AnotherRectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DIApp/IRectangle.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Reading/Program.cs" />
         <option value="$PROJECT_DIR$/Aggregate/Program.cs" />
+        <option value="$PROJECT_DIR$/DIApp/IRectangle.cs" />
+        <option value="$PROJECT_DIR$/DIApp/Rectangle.cs" />
+        <option value="$PROJECT_DIR$/DIApp/AnotherRectangle.cs" />
+        <option value="$PROJECT_DIR$/DIApp/RectangleFactory.cs" />
+        <option value="$PROJECT_DIR$/DIApp/YetAnotherRectangle.cs" />
+        <option value="$PROJECT_DIR$/DIApp/IColorRectangle.cs" />
+        <option value="$PROJECT_DIR$/DIApp/IColor.cs" />
+        <option value="$PROJECT_DIR$/DIApp/ColoredRectangle.cs" />
+        <option value="$PROJECT_DIR$/DIApp/Program.cs" />
+        <option value="$PROJECT_DIR$/Delegates/Program.cs" />
+        <option value="$PROJECT_DIR$/UptownFuncc/Program.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1XoD0zpvEjy7PHckGsLj6BNQA22" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -38,8 +79,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected=".NET Project.Aggregate">
+  <component name="RunManager" selected=".NET Project.UptownFuncc">
     <configuration name="Aggregate" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -49,6 +91,42 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Aggregate/Aggregate.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DIApp" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/DIApp/DIApp.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Delegates" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Delegates/Delegates.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -76,8 +154,29 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UptownFuncc" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/UptownFuncc/UptownFuncc.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Project.UptownFuncc" />
+        <item itemvalue=".NET Project.Delegates" />
+        <item itemvalue=".NET Project.DIApp" />
         <item itemvalue=".NET Project.Aggregate" />
       </list>
     </recent_temporary>
@@ -92,46 +191,56 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581703335581</updated>
-      <workItem from="1581703338860" duration="5259000" />
+      <workItem from="1581703338860" duration="6508000" />
+      <workItem from="1581709906816" duration="3669000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1581708400251">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1581713589658">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581708400251" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1581708400251">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581713589658" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1581713589658">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581708400251" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1581708400251">
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581713589658" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1581713589658">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581708400251" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1581708400251">
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581713589658" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1581713589658">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581708400251" />
-    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size" timestamp="1581704595108">
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581713589658" />
+    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size" timestamp="1581712906051">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size/0.0.1280.720@0.0.1280.720" timestamp="1581704595108" />
+    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size/0.0.1280.720@0.0.1280.720" timestamp="1581712906051" />
+    <state x="141" y="2" key="SettingsEditor" timestamp="1581709962184">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="141" y="2" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1581709962184" />
   </component>
 </project>

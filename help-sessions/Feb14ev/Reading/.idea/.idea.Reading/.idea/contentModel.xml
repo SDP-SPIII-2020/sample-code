@@ -6,21 +6,30 @@
     <e p="C:\Users\keith\sample-code\help-sessions\Feb14ev\Reading" t="IncludeFlat">
       <e p="Aggregate" t="IncludeRecursive">
         <e p="Aggregate.csproj" t="IncludeRecursive" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="Aggregate.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Delegates" t="IncludeRecursive">
+        <e p="Delegates.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="DIApp" t="IncludeRecursive">
+        <e p="DIApp.csproj" t="IncludeRecursive" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Reading" t="IncludeRecursive">
         <e p="Reading.csproj" t="IncludeRecursive" />
       </e>
       <e p="Reading.sln" t="IncludeFlat" />
+      <e p="UptownFuncc" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="UptownFuncc.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="UptownFuncc.csproj" t="IncludeRecursive" />
+      </e>
     </e>
   </component>
 </project>
