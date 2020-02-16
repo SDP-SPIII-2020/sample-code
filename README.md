@@ -9,9 +9,21 @@
 	Code accompanying the video by Miguel Castro.
 + `DI-Bernasconi`  
 	Code accompanying the video by Claudio Bernasconi.
++ `Microsoft-try-samples`  
+	From the Microsoft series of examples.
 + `help-sessions`  
-	Code from the online help sessions.
+	Code from the help sessions.
++ `InputOutput`  
+	Examples of the various File types.
 + `Java` - examples
++ `Autofac-Examples`  
+	The examples from the `Autofac` home site.
++ `Functional-Programming`  
+	Various examples of the functional programming constructs available in `C#`.
++ `LINQ`  
+	Examples of the `Language Integrated Query` facility from `C#`.
++ `Overloading`  
+	Examples of overloading operators in `C#`.
 + ...
 
 ### Credits
