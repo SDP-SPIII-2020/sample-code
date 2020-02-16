@@ -4,11 +4,7 @@ namespace SOLID
 {
     public class Circle : ICircle
     {
-        // public Circle() : this(1)
-        // {
-        // }
-
-        public Circle(double radius = 1.0)
+      public Circle(double radius = 1.0)
         {
             Radius = radius;
         }

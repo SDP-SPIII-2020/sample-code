@@ -1,29 +1,25 @@
-﻿#define NAME
-using System;
+﻿using System;
+using System.Linq;
 
 namespace SOLID
 {
     class Program
     {
-#if NAME
         static void Main(string[] args)
         {
-            IRectangle rect1 = (IRectangle) ShapeFactory.GetInstance("Rectangle", 3, 4);
+            IRectangle rect1 = ShapeFactory.GetInstance("Rectangle", 3, 4) as IRectangle;
             Console.WriteLine($"The area is {rect1.Area()}");
-            IRectangle rect2 = (IRectangle) ShapeFactory.GetInstance("Rectangle");
-            ICircle circ1 = new Circle(1.5);
-            ICircle circ2 = new Circle();
-            ISquare sq = //new Square(2.5);
-                (ISquare) ShapeFactory.GetInstance("Square", 3);
-//            IRectangle ir = new NewRectangle();
+            IRectangle rect2 = ShapeFactory.GetInstance("Rectangle") as IRectangle;
+            // "as" - type cast without exceptions
+            // ICircle circ1 = new Circle(1.5);
+            // ICircle circ2 = new Circle();
+            ISquare sq = ShapeFactory.GetInstance("Square", 3) as ISquare;
 
-            IShape[] arr = {rect1, rect2, circ1, circ2, sq};
+            //IRectangle ir = new NewRectangle();
 
-            foreach (var shape in arr)
-            {
-                Console.WriteLine(shape);
-            }
+            IShape[] arr = {rect1, rect2, sq};
+
+            arr.ToList().ForEach(Console.WriteLine);
         }
-#endif
     }
 }

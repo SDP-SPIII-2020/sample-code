@@ -7,7 +7,7 @@
 
         public double Area() => Height * Width;
 
-        public double TotalArea(Rectangle[] arrOfRectangles)
+        public static double TotalArea(Rectangle[] arrOfRectangles)
         {
             double area = 0.0;
             foreach (var rect in arrOfRectangles)

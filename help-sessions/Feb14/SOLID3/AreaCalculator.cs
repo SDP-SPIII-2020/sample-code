@@ -5,9 +5,7 @@ namespace SOLID
 {
     public class AreaCalculator
     {
-        public static double TotalArea(IShape[] arrOfShapes)
-        {
-            return arrOfShapes.Sum(rect => rect.Area());
-        }
+        public static double TotalArea(IShape[] arrOfShapes) =>
+            arrOfShapes.Sum(shape => shape.Area());
     }
 }

@@ -2,11 +2,7 @@
 {
     public class Rectangle : IRectangle
     {
-        // public Rectangle() : this(1, 2)
-        // {
-        // }
-
-        public Rectangle(double height = 1.0, double width = 1.0)
+      public Rectangle(double height = 1.0, double width = 1.0)
         {
             Height = height;
             Width = width;

@@ -2,10 +2,6 @@
 {
     public class Square : ISquare
     {
-        // public Square() : this(1.0)
-        // {
-        // }
-
         public Square(double length = 1.0)
         {
             Length = length;
