@@ -11,7 +11,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/IndexerExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YetAnotherSOLIDExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IndexerExample/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PredsVsDelegatesAndThis/StringExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tuple/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PredsVsDelegatesAndThis/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -24,6 +25,10 @@
         <option value="$PROJECT_DIR$/PredsVsDelegatesAndThis/Program.cs" />
         <option value="$PROJECT_DIR$/Tuple/Program.cs" />
         <option value="$PROJECT_DIR$/IndexerExample/Program.cs" />
+        <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/Class1.cs" />
+        <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/Main.cs" />
+        <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/Program.cs" />
+        <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/README.md" />
       </list>
     </option>
   </component>
@@ -116,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581948944010</updated>
-      <workItem from="1581948947182" duration="3583000" />
+      <workItem from="1581948947182" duration="4114000" />
     </task>
     <servers />
   </component>
@@ -153,10 +158,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1200" height="160" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581952565628" />
-    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size" timestamp="1581951838406">
+    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size" timestamp="1581952868360">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size/0.0.1280.720@0.0.1280.720" timestamp="1581951838406" />
+    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size/0.0.1280.720@0.0.1280.720" timestamp="1581952868360" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1581950793616">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

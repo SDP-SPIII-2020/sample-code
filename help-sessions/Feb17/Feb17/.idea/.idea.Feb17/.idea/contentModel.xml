@@ -6,16 +6,7 @@
     <e p="C:\Users\keith\RiderProjects\sample-code\help-sessions\Feb17\Feb17" t="IncludeFlat">
       <e p="Feb17.sln" t="IncludeFlat" />
       <e p="IndexerExample" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
         <e p="IndexerExample.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="IndexerExample.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="PredsVsDelegatesAndThis" t="IncludeRecursive">
@@ -23,6 +14,19 @@
       </e>
       <e p="Tuple" t="IncludeRecursive">
         <e p="Tuple.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="YetAnotherSOLIDExample" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="YetAnotherSOLIDExample.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="README.md" t="Include" />
+        <e p="YetAnotherSOLIDExample.csproj" t="IncludeRecursive" />
       </e>
     </e>
   </component>
