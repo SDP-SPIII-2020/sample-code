@@ -11,11 +11,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/YetAnotherSOLIDExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IndexerExample/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YetAnotherSOLIDExample/Employee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YetAnotherSOLIDExample/ManageEmployees.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/Employee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YetAnotherSOLIDExample/IEmployee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/IEmployee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/IReportGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step05/ContractedEmployee.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YetAnotherSOLIDExampleStep02/Class1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/PDFReportGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/DOCXReportGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/ZeroHoursEmployee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step03/ContractedEmployee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step05/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step05/YASEFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PredsVsDelegatesAndThis/StringExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tuple/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PredsVsDelegatesAndThis/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step02/Employee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step04/ContractedEmployee.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step02/IManageEmployees.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step02/ManageEmployees.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YetAnotherSOLIDExample/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step02/ReportGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step04/IManageEmployees.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step02/IReportGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Step04/ManageEmployees.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -29,6 +52,27 @@
         <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/Main.cs" />
         <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/Program.cs" />
         <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/README.md" />
+        <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/Employee.cs" />
+        <option value="$PROJECT_DIR$/YetAnotherSOLIDExample/ManageEmployees.cs" />
+        <option value="$PROJECT_DIR$/YetAnotherSOLIDExampleStep02/Class1.cs" />
+        <option value="$PROJECT_DIR$/Step02/Program.cs" />
+        <option value="$PROJECT_DIR$/Step02/IManageEmployees.cs" />
+        <option value="$PROJECT_DIR$/Step02/ManageEmployees.cs" />
+        <option value="$PROJECT_DIR$/Step02/ReportGenerator.cs" />
+        <option value="$PROJECT_DIR$/Step02/IReportGenerator.cs" />
+        <option value="$PROJECT_DIR$/Step03/PDFReportGenerator.cs" />
+        <option value="$PROJECT_DIR$/Step03/DOCXReportGenerator.cs" />
+        <option value="$PROJECT_DIR$/Step03/Employee.cs" />
+        <option value="$PROJECT_DIR$/Step03/ZeroHoursEmployee.cs" />
+        <option value="$PROJECT_DIR$/Step03/ContractedEmployee.cs" />
+        <option value="$PROJECT_DIR$/Step03/Program.cs" />
+        <option value="$PROJECT_DIR$/Step03/IReportGenerator.cs" />
+        <option value="$PROJECT_DIR$/Step03/IEmployee.cs" />
+        <option value="$PROJECT_DIR$/Step04/Program.cs" />
+        <option value="$PROJECT_DIR$/Step04/ManageEmployees.cs" />
+        <option value="$PROJECT_DIR$/Step04/IManageEmployees.cs" />
+        <option value="$PROJECT_DIR$/Step05/Program.cs" />
+        <option value="$PROJECT_DIR$/Step05/YASEFactory.cs" />
       </list>
     </option>
   </component>
@@ -49,7 +93,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected=".NET Project.IndexerExample">
+  <component name="RunManager" selected=".NET Project.Step05">
     <configuration name="IndexerExample" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -86,6 +130,42 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Step03" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Step03/Step03.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Step05" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Step05/Step05.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tuple" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -106,6 +186,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Project.Step05" />
+        <item itemvalue=".NET Project.Step03" />
         <item itemvalue=".NET Project.IndexerExample" />
         <item itemvalue=".NET Project.Tuple" />
       </list>
@@ -121,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581948944010</updated>
-      <workItem from="1581948947182" duration="4114000" />
+      <workItem from="1581948947182" duration="9181000" />
     </task>
     <servers />
   </component>
@@ -142,26 +224,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1200" height="160" key="GridCell.Tab.0.bottom" timestamp="1581952565644">
+    <state width="1200" height="160" key="GridCell.Tab.0.bottom" timestamp="1581958198407">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581952565644" />
-    <state width="1200" height="160" key="GridCell.Tab.0.center" timestamp="1581952565628">
+    <state width="1200" height="160" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581958198407" />
+    <state width="1200" height="160" key="GridCell.Tab.0.center" timestamp="1581958198407">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581952565628" />
-    <state width="1200" height="160" key="GridCell.Tab.0.left" timestamp="1581952565628">
+    <state width="1200" height="160" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581958198407" />
+    <state width="1200" height="160" key="GridCell.Tab.0.left" timestamp="1581958198407">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581952565628" />
-    <state width="1200" height="160" key="GridCell.Tab.0.right" timestamp="1581952565628">
+    <state width="1200" height="160" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581958198407" />
+    <state width="1200" height="160" key="GridCell.Tab.0.right" timestamp="1581958198407">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1200" height="160" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581952565628" />
-    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size" timestamp="1581952868360">
+    <state width="1200" height="160" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581958198407" />
+    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size" timestamp="1581956787200">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size/0.0.1280.720@0.0.1280.720" timestamp="1581952868360" />
+    <state x="232" y="91" key="Rider.ProjectTemplateDialog.Size/0.0.1280.720@0.0.1280.720" timestamp="1581956787200" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1581950793616">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

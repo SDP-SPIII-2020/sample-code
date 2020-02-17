@@ -12,20 +12,41 @@
       <e p="PredsVsDelegatesAndThis" t="IncludeRecursive">
         <e p="PredsVsDelegatesAndThis.csproj" t="IncludeRecursive" />
       </e>
+      <e p="Step02" t="IncludeRecursive">
+        <e p="Step02.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Step03" t="IncludeRecursive">
+        <e p="Step03.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Step04" t="IncludeRecursive">
+        <e p="Step04.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Step05" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ContractedEmployee.cs" t="Include" />
+        <e p="DOCXReportGenerator.cs" t="Include" />
+        <e p="Employee.cs" t="Include" />
+        <e p="IEmployee.cs" t="Include" />
+        <e p="IManageEmployees.cs" t="Include" />
+        <e p="IReportGenerator.cs" t="Include" />
+        <e p="ManageEmployees.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Step05.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PDFReportGenerator.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Step05.csproj" t="IncludeRecursive" />
+        <e p="YASEFactory.cs" t="Include" />
+        <e p="ZeroHoursEmployee.cs" t="Include" />
+      </e>
       <e p="Tuple" t="IncludeRecursive">
         <e p="Tuple.csproj" t="IncludeRecursive" />
       </e>
       <e p="YetAnotherSOLIDExample" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="YetAnotherSOLIDExample.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="README.md" t="Include" />
         <e p="YetAnotherSOLIDExample.csproj" t="IncludeRecursive" />
       </e>
     </e>
