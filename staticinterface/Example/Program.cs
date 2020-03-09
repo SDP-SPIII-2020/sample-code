@@ -2,11 +2,13 @@
 
 namespace Example
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IThing x = new Thing(3);
+            IThing y = new Thing(4);
+            Console.WriteLine($"Result: {x + y}");
         }
     }
 }
