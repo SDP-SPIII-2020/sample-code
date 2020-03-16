@@ -13,3 +13,6 @@
 [submodule "Autofac-Examples"]
 	path = Autofac-Examples
 	url = https://github.com/autofac/Examples.git
+[submodule "dive-into-design-patterns-book-code"]
+	path = dive-into-design-patterns-book-code
+	url = https://github.com/SDP-SPIII-2020/dive-into-design-patterns-book-code.git
