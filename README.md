@@ -3,6 +3,8 @@
 
 + `Autofac-Examples`  
 	Dependency Injection framework
++ `ClassesQuickstart`  
+	An introduction to classes and interfaces
 + `DI-Bernasconi`  
 	Code accompanying the video by Claudio Bernasconi.
 + `DI-Webcast`  
