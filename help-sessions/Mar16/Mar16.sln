@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mar16", "Mar16\Mar16.csproj", "{9C4DDBF9-DFB7-4425-B240-D6D6FAEDCCD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionRevisited", "FractionRevisited\FractionRevisited.csproj", "{9C4DDBF9-DFB7-4425-B240-D6D6FAEDCCD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
