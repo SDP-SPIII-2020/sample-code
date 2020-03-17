@@ -28,7 +28,7 @@
 	Some examples on the basic constructs of threading in `C#` (although there is a `BackgroundWorker` example).
 + `help-sessions`  
 	Code from the online help sessions.
-+ `linkedlearning-design-patterns-examples`  
++ `linkedin-learning-design-patterns-examples`  
 	The sample code from the series of three `C#` design patten "courses" by Reynald Adolphe
 + `prog-cs-8-examples`  
 	Source code from "Programming C# 8.0" by Ian Griffiths  
