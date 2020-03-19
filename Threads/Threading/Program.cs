@@ -3,16 +3,18 @@ using System;
 
 namespace Threads0
 {
-    public class Program
+    public class Tester
     {
-        private int _x = 5;
-        private int _y = 7;
-
         public static void Main()
         {
-            var t = new Program();
+            var t = new Tester();
             t.DoTest();
         }
+
+        private int _x = 5;
+
+        private int _y = 7;
+        // could use this field to narrow down the scope of the lock object swapLock = new { };
 
         private void DoTest()
         {
@@ -31,8 +33,8 @@ namespace Threads0
             {
                 Console.WriteLine($"Swap enter: x = {_x}, y = {_y}");
                 var z = this._x;
-                this._x = this._y;
-                this._y = z;
+                _x = this._y;
+                _y = z;
                 Console.WriteLine($"Swap leave: x = {_x}, y = {_y}");
             }
         }

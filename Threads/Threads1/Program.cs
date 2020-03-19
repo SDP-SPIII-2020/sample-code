@@ -3,11 +3,11 @@ using System;
 
 namespace Threads1
 {
-    public class Program
+    public class Tester
     {
         public static void Main()
         {
-            var t = new Program();
+            var t = new Tester();
             t.DoTest();
         }
 
@@ -24,7 +24,7 @@ namespace Threads1
             foreach (var myThread in myThreads)
             {
                 myThread.IsBackground = true;
-                myThread.Name = "Thread" + n.ToString();
+                myThread.Name = "Thread" + n;
                 Console.WriteLine($"Starting thread {myThread.Name}");
                 myThread.Start();
                 n++;
@@ -39,7 +39,7 @@ namespace Threads1
             }
 
             // after all threads end print this message
-            Console.WriteLine("All threads are done");
+            Console.WriteLine("All my threads are done");
         }
 
         private long _counter = 0;
@@ -75,7 +75,7 @@ namespace Threads1
             try
             {
                 // (1) synchronise this area
-                Monitor.Enter(this); // comment this out and line XXX to see what happens
+                Monitor.Enter(this);
 
                 while (_counter < 10)
                 {
@@ -83,7 +83,7 @@ namespace Threads1
                     Monitor.Enter(this);
                     Thread.Sleep(1);
                     _counter++;
-                    Console.WriteLine($"[{Thread.CurrentThread.Name}] In Increment. Counter: {_counter}.");
+                    Console.WriteLine($"[{Thread.CurrentThread.Name}] In Incrementer. Counter: {_counter}.");
 
                     // (2) more fine-grained control like this:
                     Monitor.Pulse(this); // inform waiting threads of the change
@@ -91,7 +91,7 @@ namespace Threads1
                     Thread.Sleep(1); // give other threads time to work
                 }
 
-                Monitor.Pulse(this); // (1) release lock after all increments! --- XXX
+                Monitor.Pulse(this); // (1) release lock after all increments!
             }
             finally
             {
