@@ -8,6 +8,7 @@ namespace FunctionalProgrammingRedux
 {
     public static class AvoidChangingState
     {
+#if X
         public static void Main(string[] args)
         {
             // int[] original = {1, 7, 4, 3, 2};
@@ -35,6 +36,7 @@ namespace FunctionalProgrammingRedux
 
             Parallel.Invoke((Action) Task1,Task2);
         }
+#endif
     }
 }
 // By default, many of the C# structures are mutable
