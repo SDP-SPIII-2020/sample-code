@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace FunctionalProgrammingRedux
 {
@@ -17,6 +18,7 @@ namespace FunctionalProgrammingRedux
             }
         }
 
+#if X
         public static void Main(string[] args)
         {
             // Func<int, bool> isDivisible(int n)
@@ -29,6 +31,17 @@ namespace FunctionalProgrammingRedux
             // Console.WriteLine(isDivisible(3));
             // num3.ToList().ForEach(x => Console.Write($"  {x}"));
             // Console.WriteLine();
+
+            Func<int, int, int> divide = (x, y) => x / y;
+            
+            Console.WriteLine($"Answer: {divide(6,2)}");
+
+            static Func<T, T, R> Swap<T, R>(Func<T, T, R> f)
+                => (t2, t1) => f(t1, t2);
+
+            var divideBy = Swap(divide);
+            Console.WriteLine($"Answer: {divideBy(2,6)}");
         }
+#endif
     }
 }
