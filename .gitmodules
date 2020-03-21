@@ -16,3 +16,5 @@
 [submodule "dive-into-design-patterns-book-code"]
 	path = dive-into-design-patterns-book-code
 	url = https://github.com/SDP-SPIII-2020/dive-into-design-patterns-book-code.git
+[submodule "ComplexNumbersExample"]
+	url = https://github.com/SDP-SPIII-2020/example-complex-numbers.git
