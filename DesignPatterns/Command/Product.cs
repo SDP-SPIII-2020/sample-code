@@ -4,8 +4,8 @@ namespace Command
 {
     public class Product
     {
-        public string Name { get; set; }
-        public decimal Price { get; set; }
+        private string Name { get; set; }
+        private decimal Price { get; set; }
 
         public Product(string name, decimal price)
         {

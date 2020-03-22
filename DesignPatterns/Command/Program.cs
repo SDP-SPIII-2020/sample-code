@@ -14,6 +14,11 @@ namespace Command
             Execute(product,modifyPrice, new ProductCommand(product, PriceAction.Increase, 75m));
             
             Console.WriteLine(product);   
+            Console.WriteLine(modifyPrice.ListCommands());
+            
+            modifyPrice.UndoActions();
+            Console.WriteLine(product);   
+            Console.WriteLine(modifyPrice.ListCommands());
         }
 
         private static void Execute(Product product, ModifyPrice modifyPrice, ICommand productCommand)

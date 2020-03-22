@@ -30,5 +30,23 @@ namespace Command
                     break;
             }
         }
+
+        public void UndoAction()
+        {
+            switch (_priceAction)
+            {
+                case PriceAction.Increase:
+                    _product.DecreasePrice(_amount);
+                    break;
+                case PriceAction.Decrease:
+                    _product.IncreasePrice(_amount);
+                    break;
+                default:
+                    Console.WriteLine($"Invalid action {_priceAction}!");
+                    break;
+            }
+        }
+
+        public override string ToString() => _priceAction.ToString();
     }
 }
