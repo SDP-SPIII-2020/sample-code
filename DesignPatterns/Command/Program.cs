@@ -2,11 +2,24 @@
 
 namespace Command
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var modifyPrice = new ModifyPrice();
+            var product = new Product("Tablet computer", 500.50m);
+            
+            Execute(product, modifyPrice, new ProductCommand(product, PriceAction.Increase, 100m));
+            Execute(product, modifyPrice, new ProductCommand(product, PriceAction.Decrease, 5m));
+            Execute(product,modifyPrice, new ProductCommand(product, PriceAction.Increase, 75m));
+            
+            Console.WriteLine(product);   
+        }
+
+        private static void Execute(Product product, ModifyPrice modifyPrice, ICommand productCommand)
+        {
+            modifyPrice.SetCommand(productCommand);
+            modifyPrice.Invoke();
         }
     }
 }
