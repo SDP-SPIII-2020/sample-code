@@ -11,6 +11,8 @@
 	Code accompanying the video by Miguel Castro.
 + `DependencyInjection`  
 	The code from the session — `HelloWorld`.
++ `DesignPatterns`  
+	Further examples of the GoF design patterns.
 + `Functional-Programming`  
 	A series of functional programming examples.
 + `InputOutput`  
