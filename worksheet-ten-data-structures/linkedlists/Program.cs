@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace worksheet_ten_data_structures
+namespace linkedlists
 {
-    using static LinkedList;
-
     public static class Program
     {
         public static void Main(string[] args)

@@ -1,7 +1,7 @@
 using System;
 using Unit = System.ValueTuple;
 
-namespace worksheet_ten_data_structures
+namespace linkedlists
 {
     public static class ActionExt
     {

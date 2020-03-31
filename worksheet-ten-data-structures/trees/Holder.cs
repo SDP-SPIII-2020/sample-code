@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace linkedlists
+namespace trees
 {
     public class Holder<TV, T>
     {

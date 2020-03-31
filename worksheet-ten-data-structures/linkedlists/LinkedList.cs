@@ -1,11 +1,9 @@
-﻿using LanguageExt;
-using static LanguageExt.Prelude;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Unit = System.ValueTuple;
 
-namespace worksheet_ten_data_structures
+namespace linkedlists
 {
     // List<T> = Empty | Otherwise(T, List<T>)
 
@@ -74,7 +72,7 @@ namespace worksheet_ten_data_structures
             => @this.Match(
                 () => List(value, List<T>()),
                 (head, tail) => List(head, tail.Append(value)));
-        
+
         private static List<R> Map<T, R>(this List<T> @this, Func<T, R> f)
             => @this.Match(
                 () => List<R>(),
