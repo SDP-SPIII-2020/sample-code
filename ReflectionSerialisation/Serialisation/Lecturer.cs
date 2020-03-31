@@ -4,7 +4,7 @@ namespace ReflectionSerialisation
 {
     // Lecturer is another sub-class of Person, and inherits its data-fields and methods
     [Serializable]
-    class Lecturer : Person
+    internal class Lecturer : Person
     {
         public string OfficeNo { get; set; }
 

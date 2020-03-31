@@ -5,6 +5,8 @@
 	Dependency Injection framework
 + `ClassesQuickstart`  
 	An introduction to classes and interfaces
++ `DataStructures`  
+	linked list and tree examples.
 + `DI-Bernasconi`  
 	Code accompanying the video by Claudio Bernasconi.
 + `DI-Webcast`  
@@ -28,8 +30,10 @@
 	`MSUnit` examples
 + `Threads`  
 	Some examples on the basic constructs of threading in `C#` (although there is a `BackgroundWorker` example).
-+ `help-sessions`  
++ `help-sessions-*`  
 	Code from the online help sessions.
++ `lecture-*`  
+	Code from the online lecture sessions.
 + `linkedin-learning-design-patterns-examples`  
 	The sample code from the series of three `C#` design patten "courses" by Reynald Adolphe
 + `prog-cs-8-examples`  

@@ -17,8 +17,8 @@ namespace ReflectionSerialisation
             var l = new Lecturer("Hans-Wolfgang", "Loidl", "Edinburgh", "G48");
             Console.WriteLine(
                 $"\nHere we use the overriden ToString() method, implemented as a generic serialisation method:\n");
-            Console.WriteLine($"Student: {s} ");
-            Console.WriteLine($"Lecturer: {l} ");
+            Console.WriteLine($"Student: {s}\n{s.GetHashCode()}");
+            Console.WriteLine($"Lecturer: {l}\n{l.GetHashCode()}");
 
             /* ------------------------------------------------------- */
             IFormatter formatter = new BinaryFormatter();
@@ -28,11 +28,11 @@ namespace ReflectionSerialisation
 
             /* ------------------------------------------------------- */
             Stream streamIn = new FileStream("ThisPerson.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
-            var l1 = (Lecturer) formatter.Deserialize(streamIn);
+            var l1 = formatter.Deserialize(streamIn) as Lecturer;
             streamIn.Close();
 
             // Test the result: contents should be the same as in l
-            Console.WriteLine($"\nLecturer after serialise/deserialize:\n{l1}");
+            Console.WriteLine($"\nLecturer after serialise/deserialize:\n{l1}\n{l1.GetHashCode()}");
         }
     }
 }

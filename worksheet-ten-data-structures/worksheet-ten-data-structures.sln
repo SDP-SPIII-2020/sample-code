@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linkedlists", "linkedlists\linkedlists.csproj", "{A437F3A2-B907-4033-B32D-2E27586F380D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trees", "trees\trees.csproj", "{FA9C1230-F6DC-47AD-A30D-77BB08F17167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A437F3A2-B907-4033-B32D-2E27586F380D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A437F3A2-B907-4033-B32D-2E27586F380D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A437F3A2-B907-4033-B32D-2E27586F380D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A437F3A2-B907-4033-B32D-2E27586F380D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9C1230-F6DC-47AD-A30D-77BB08F17167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9C1230-F6DC-47AD-A30D-77BB08F17167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9C1230-F6DC-47AD-A30D-77BB08F17167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9C1230-F6DC-47AD-A30D-77BB08F17167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

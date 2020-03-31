@@ -9,8 +9,6 @@ namespace ReflectionSerialisation
         // public properties to access the data
         public string FName { get; set; }
         public string LName { get; set; }
-
-
         public string Address { get; set; }
 
         public Person(string fName, string lName, string address)
