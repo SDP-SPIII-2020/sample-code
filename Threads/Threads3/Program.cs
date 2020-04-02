@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace Threads3
 {
-    public static class MainClass
+    public static class Program
     {
         // list of all threads
         private static readonly LinkedList<Thread> AllThreads = new LinkedList<Thread>();

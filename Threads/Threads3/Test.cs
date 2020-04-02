@@ -42,33 +42,6 @@ namespace Threads3
             AllFileData.AddLast(_currentFileData);
         }
 
-        // -----------------------------------------------------------------------------
-        // 2 threads co-operate to get the HMTL code:
-        // . getFContents   retrieves the contents of the file
-        // . displayFile  shows the contents, read by the previous thread
-
-        // could use this to set the filename in a separate thread
-        // mulT: lookup the file name from a variable
-        /*
-        public static void getFName() {
-         System.Console.WriteLine("<{0}> setting filename ... ", Thread.CurrentThread.Name);
-         if (currentFileData.getArgs().Length == 0) { // expect 1 arg: value to double
-           // System.Console.WriteLine("Usage: <prg> <filename>");
-           lock (mainLock) { // protect write access to static fields
-             currentFileData.setFileName("mulT.cs");  // by default, read the sources for this file
-             okFileName = true;
-           }
-         } else {    
-           lock (mainLock) { // protect write access to static fields
-             currentFileData.setFileName(currentFileData.getArgs()[0]);
-             okFileName = true;
-           }
-         }
-        }
-        */
-
-        /* Could use ParameterizedThreadStart, which allows to pass an argument to the method in the thread */
-
         // requires: File.Exists(filename)
         // summary: retrieve the contents for the current file
         private void GetFContents()
@@ -84,6 +57,7 @@ namespace Threads3
             // assert: not (null filename)
             // lock (mainLock) {
 
+            var inValue = "";
             try
             {
                 Monitor.Enter(_mainLock); // enter critical region
@@ -92,7 +66,6 @@ namespace Threads3
 
                 using var sr = new StreamReader(_currentFileData.FileName);
                 // std iteration over the contents of a file
-                var inValue = "";
                 while ((inValue = sr.ReadLine()) != null) // read line-by-line
                     _currentFileData.Contents = inValue + "\n";
 

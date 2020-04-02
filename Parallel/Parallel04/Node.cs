@@ -7,9 +7,9 @@ namespace Parallel04
         where T : IComparable // T implements a CompareTo method
     {
         // Private member-variables
-        public T Value { get; set; }
-        public Node<T> Left { get; set; }
-        public Node<T> Right { get; set; }
+        public T Value { get; private set; }
+        public Node<T> Left { get; private set; }
+        public Node<T> Right { get; private set; }
 
         // delegates used in this class
         public delegate T TreeMapperDelegate(T t);
@@ -62,28 +62,13 @@ namespace Parallel04
             {
                 return true;
             }
-            else if (Value.CompareTo(x) < 0)
+
+            if (Value.CompareTo(x) < 0)
             {
-                if (Right == null)
-                {
-                    return false;
-                }
-                else
-                {
-                    return Right.Find(x);
-                }
+                return Right != null && Right.Find(x);
             }
-            else
-            {
-                if (Left == null)
-                {
-                    return false;
-                }
-                else
-                {
-                    return Left.Find(x);
-                }
-            }
+
+            return Left != null && Left.Find(x);
         }
 
         // higher-order functions over trees
@@ -97,11 +82,11 @@ namespace Parallel04
         // parallel version of the same higher-order function
         public void ParMapTree(TreeMapperDelegate f)
         {
-            int i = 0;
+            var i = 0;
             var tasks = new Task[3];
-            Task t3;
             var t1 = Task.Factory.StartNew(() => this.Value = f(this.Value));
             tasks[i++] = t1;
+            
             if (Left != null)
             {
                 var t2 = Task.Factory.StartNew(() => this.Left.ParMapTree(f));
@@ -110,7 +95,7 @@ namespace Parallel04
 
             if (Right != null)
             {
-                t3 = Task.Factory.StartNew(() => this.Right.ParMapTree(f));
+                var t3 = Task.Factory.StartNew(() => this.Right.ParMapTree(f));
                 tasks[i++] = t3;
             }
 
@@ -127,9 +112,8 @@ namespace Parallel04
                 str += " ";
             }
 
-            return str + Value + "\n" +
-                   (Left == null ? str + " ." + "\n" : Left.ToStringIndent(n + 1)) +
-                   (Right == null ? str + " ." + "\n" : Right.ToStringIndent(n + 1));
+            return
+                $"{str}{Value}\n{(Left == null ? str + " ." + "\n" : Left.ToStringIndent(n + 1))}{(Right == null ? str + " ." + "\n" : Right.ToStringIndent(n + 1))}";
         }
     }
 }

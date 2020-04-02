@@ -173,6 +173,7 @@ namespace Parallel04
 
             public object Current => _currNode.Value;
         }
+        
         // -------------------------------------------------------
         // IEnumerator implementation 
         // This does a depth-first, in-fix traversal of the tree

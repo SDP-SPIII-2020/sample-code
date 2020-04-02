@@ -1,18 +1,16 @@
 ﻿/* 
 From: 
-Parallel Programming with Microsoft® .NET
-Design Patterns for Decomposition and Coordination on Multicore Architectures
-By Colin Campbell, Ralph Johnson, Ade Miller, Stephen Toub
-Publisher: Microsoft Press
-Released:  August 2010 
-On-line: http://msdn.microsoft.com/en-us/library/ff963547.aspx
+    Parallel Programming with Microsoft® .NET
+    Design Patterns for Decomposition and Coordination on Multicore Architectures
+    By Colin Campbell, Ralph Johnson, Ade Miller, Stephen Toub
+    Publisher: Microsoft Press
+    Released:  August 2010 
+    On-line: http://msdn.microsoft.com/en-us/library/ff963547.aspx
 
-Chapter on Futures
-
+    Chapter on Futures
 */
 
 using System;
-using System.Threading.Tasks;
 
 namespace Parallel05
 {

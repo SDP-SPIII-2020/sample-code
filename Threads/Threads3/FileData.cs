@@ -21,7 +21,7 @@ namespace Threads3
         public FileData(string filename)
         {
             FileName = filename;
-            FileData.Counter++;
+            Counter++;
         }
     }
 }

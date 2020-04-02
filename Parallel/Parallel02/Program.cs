@@ -39,16 +39,9 @@ namespace Parallel02
 
         private static void MkSequence(ICollection<int> seq, int m, int n)
         {
-            if (m > n)
-            {
-                return;
-            }
-            else
-            {
-                seq.Add(m);
-                MkSequence(seq, m + 1, n);
-                return;
-            }
+            if (m > n) return;
+            seq.Add(m);
+            MkSequence(seq, m + 1, n);
         }
 
         private static int SomeComputation(int i) => Fib(i);

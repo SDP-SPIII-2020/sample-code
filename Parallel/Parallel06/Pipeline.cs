@@ -24,9 +24,7 @@ namespace Parallel06
 
         public delegate T ProducerDelegate(T x, T y);
 
-        public static void Producer(BlockingCollection<T> output,
-            T from, T to, IncDelegate inc
-            /* int seed */)
+        public static void Producer(BlockingCollection<T> output, T from, T to, IncDelegate inc /* int seed */)
         {
             Console.WriteLine("Producer running ... ");
             var items = new List<T>();
@@ -46,9 +44,7 @@ namespace Parallel06
 
         public delegate T ConsumerDelegate(T x);
 
-        public static void Consumer(BlockingCollection<T> input,
-            ConsumerDelegate worker,
-            BlockingCollection<T> output)
+        public static void Consumer(BlockingCollection<T> input, ConsumerDelegate worker, BlockingCollection<T> output)
         {
             System.Console.WriteLine("Consumer running ... ");
             try

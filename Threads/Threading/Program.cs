@@ -18,8 +18,8 @@ namespace Threads0
 
         private void DoTest()
         {
-            var t1 = new Thread(new ThreadStart(Swap));
-            var t2 = new Thread(new ThreadStart(Swap));
+            var t1 = new Thread(Swap);
+            var t2 = new Thread(Swap);
 
             t1.Start();
             t2.Start();

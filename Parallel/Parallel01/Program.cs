@@ -62,9 +62,8 @@ namespace Parallel
                 var m = Convert.ToInt32(args[1]);
                 var n = Convert.ToInt32(args[2]);
                 var fibs = new int[n];
-
                 /* Parallel version, using only 2 tasks */
-                var options = new ParallelOptions() {MaxDegreeOfParallelism = k};
+                var options = new ParallelOptions {MaxDegreeOfParallelism = k};
                 TimeIt(() =>
                 {
                     System.Threading.Tasks.Parallel.For(m, n, options, i => { fibs[i] = ParallelLoops.Fib(i); });

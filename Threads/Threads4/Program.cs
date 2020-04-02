@@ -2,6 +2,8 @@
 using System.Threading;
 using System.ComponentModel;
 
+//#define XXX // example of directives and selective compilation
+
 namespace Threads4
 {
     public static class Program
@@ -19,8 +21,11 @@ namespace Threads4
             _bw.ProgressChanged += bw_ProgressChanged;
             _bw.RunWorkerCompleted += bw_RunWorkerCompleted;
 
+            #region MyRegion
+            #if XXX
             _bw.RunWorkerAsync("Hello to worker");
-
+            #endif
+            #endregion
             Console.WriteLine("Press Enter in the next 5 seconds to cancel");
             Console.ReadLine();
             if (_bw.IsBusy)

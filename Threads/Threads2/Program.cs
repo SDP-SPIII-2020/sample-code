@@ -28,8 +28,8 @@ namespace Threads2
         {
             Thread[] myThreads =
             {
-                new Thread(new ThreadStart(Decrement)), // arg is a function from void to void
-                new Thread(new ThreadStart(Incrementer)) // arg is a function from void to void
+                new Thread(Decrement), // arg is a function from void to void
+                new Thread(Incrementer) // arg is a function from void to void
             };
 
             var n = 1;
@@ -111,7 +111,7 @@ namespace Threads2
                     _counter++;
                     Thread.Sleep(1);
                     Console.WriteLine($"[{Thread.CurrentThread.Name}] In Incrementer. Counter: {_counter}.");
-                    
+
 
                     // (2) more fine-grained control like this:
                     Monitor.Pulse(this); // inform waiting threads of the change

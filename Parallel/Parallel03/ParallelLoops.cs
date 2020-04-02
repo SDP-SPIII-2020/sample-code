@@ -1,15 +1,15 @@
 ﻿/* 
-From: 
-Parallel Programming with Microsoft® .NET
-Design Patterns for Decomposition and Coordination on Multicore Architectures
-By Colin Campbell, Ralph Johnson, Ade Miller, Stephen Toub
-Publisher: Microsoft Press
-Released:  August 2010 
-On-line: http://msdn.microsoft.com/en-us/library/ff963547.aspx
+    From: 
+        Parallel Programming with Microsoft® .NET
+        Design Patterns for Decomposition and Coordination on Multicore Architectures
+        By Colin Campbell, Ralph Johnson, Ade Miller, Stephen Toub
+        Publisher: Microsoft Press
+        Released:  August 2010 
+        On-line: http://msdn.microsoft.com/en-us/library/ff963547.aspx
 
-Chapter on Parallel aggregation
+    Chapter on Parallel aggregation
 
-This example adds a partitioner to aggregating ForEach loop.
+    This example adds a petitioner to aggregating ForEach loop.
 */
 
 using System;
@@ -62,9 +62,9 @@ namespace Parallel03
             if (args.Length != 3)
             {
                 // expect 1 arg: value to double
-                System.Console.WriteLine("Usage: <prg> <k> <m> <n>");
-                System.Console.WriteLine("k ... number of cores to use");
-                System.Console.WriteLine("m, n ... the range of values to apply Fib to; a good range is: 35 39");
+                Console.WriteLine("Usage: <prg> <k> <m> <n>");
+                Console.WriteLine("k ... number of cores to use");
+                Console.WriteLine("m, n ... the range of values to apply Fib to; a good range is: 35 39");
             }
             else
             {
@@ -81,7 +81,7 @@ namespace Parallel03
                 Console.WriteLine($"Running Parallel Foreach, with aggregation, over sequence {seq} on {k} cores");
                 // var options = new ParallelOptions() { MaxDegreeOfParallelism = k};
                 var size = seq.Count / k; // make a partition large enough to feed k cores
-                var rangePartitioner = Partitioner.Create(0, seq.Count, size+1);
+                var rangePartitioner = Partitioner.Create(0, seq.Count, size + 1);
                 TimeIt(() =>
                 {
                     Parallel.ForEach(

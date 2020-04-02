@@ -4,14 +4,11 @@
 //     https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/using-async-for-file-access
 
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
-// using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Threads6
 {
@@ -19,8 +16,6 @@ namespace Threads6
     {
         private static async Task ProcessRead(string filePath)
         {
-            //filePath = @"temp.txt";
-
             Console.WriteLine("ProcessRead: Begin");
 
             if (!File.Exists(filePath))

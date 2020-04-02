@@ -15,8 +15,8 @@ namespace Threads1
         {
             Thread[] myThreads =
             {
-                new Thread(new ThreadStart(Decrement)),
-                new Thread(new ThreadStart(Increment))
+                new Thread(Decrement),
+                new Thread(Increment)
             };
 
             var n = 1;
