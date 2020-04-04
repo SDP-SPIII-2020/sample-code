@@ -26,14 +26,13 @@ namespace BankAccount
         public override void Withdraw(decimal x)
         {
             Contract.Requires(x >= 0);
-            if (this.Balance + this.Overdraft >= x)
+            if (Balance + Overdraft >= x)
             {
-                this.Balance -= x;
+                Balance -= x;
             }
             else
             {
-                throw new InsufficientBalance(String.Format("Balance (including overdraft of {0}) too low: {1}",
-                    this.Overdraft, this.Balance));
+                throw new InsufficientBalance($"Balance (including overdraft of {Overdraft}) too low: {Balance}");
             }
 
             Contract.Ensures(this.Balance + this.Overdraft >= 0);
@@ -45,13 +44,10 @@ namespace BankAccount
         public override void ShowAccount()
         {
             base.ShowAccount();
-            Console.WriteLine("\twith an overdraft of {0}", this.Overdraft);
+            Console.WriteLine($"\twith an overdraft of {Overdraft}");
         }
 
-        public override double ConvertToGbp()
-        {
-            return (double) this.Balance;
-        }
+        public override double ConvertToGbp() => (double) Balance;
 
         // Class invariants (using Code Contracts): 
         // invariant: this.balance >= - this.overdraft   

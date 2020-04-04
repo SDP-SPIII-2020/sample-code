@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{BA074C7F-189C-4C55-9D1E-7DA7F37C1DCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{8E2DAB7E-94E7-4D22-9C36-67579836558F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{7DB418B4-4E8E-4843-BE3D-8985FCAF25FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{BA074C7F-189C-4C55-9D1E-7DA7F37C1DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA074C7F-189C-4C55-9D1E-7DA7F37C1DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA074C7F-189C-4C55-9D1E-7DA7F37C1DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2DAB7E-94E7-4D22-9C36-67579836558F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2DAB7E-94E7-4D22-9C36-67579836558F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2DAB7E-94E7-4D22-9C36-67579836558F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2DAB7E-94E7-4D22-9C36-67579836558F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB418B4-4E8E-4843-BE3D-8985FCAF25FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB418B4-4E8E-4843-BE3D-8985FCAF25FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB418B4-4E8E-4843-BE3D-8985FCAF25FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB418B4-4E8E-4843-BE3D-8985FCAF25FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

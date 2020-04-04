@@ -6,7 +6,7 @@
 
 namespace Rationals
 {
-    public static class ContractExampleMain
+    public static class Program
     {
         public static void Main()
         {

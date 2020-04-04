@@ -2,7 +2,7 @@ using System;
 
 namespace QuickSort
 {
-    public static class Tester
+    public static class Program
     {
         private const int MaxVal = 1000; // bound on values
         private const int Iterations = 1; // number of tests to run
@@ -41,16 +41,14 @@ namespace QuickSort
         {
             if (args.Length != 2)
             {
-                Console.WriteLine("Usage: <prg> <v> <n> <t>");
+                Console.WriteLine("Usage: <prg> <v> <n>");
                 Console.WriteLine("v ... version (0: ascending order; 1: descending order)");
                 Console.WriteLine("n ... list length");
-                Console.WriteLine("t ... threshold for generating parallelism");
             }
             else
             {
                 var v = Convert.ToInt32(args[0]);
                 var n = Convert.ToInt32(args[1]);
-                var t = Convert.ToInt32(args[2]);
 
                 GenSort<int>.CmpDelegate theCmp;
 

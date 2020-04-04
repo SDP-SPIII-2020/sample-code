@@ -14,82 +14,39 @@
 // -----------------------------------------------------------------------------
 
 using System;
-using System.Diagnostics.Contracts;
 
 namespace BankAccount
 {
-    // the basic account
-    // -----------------------------------------------------------------------------
-
-    // -----------------------------------------------------------------------------
-
-    internal class ForeignCurrencyAccount : ProperBankAccount
-    {
-        // currency
-        public string currency { get; set; }
-
-        // exchange rate
-        public double rate { get; set; }
-
-        public ForeignCurrencyAccount(string name, string cur, double rate) : base(name)
-        {
-            this.currency = cur;
-            this.rate = rate;
-        }
-
-        public override double ConvertToGbp()
-        {
-            return (double) this.Balance * this.rate;
-        }
-
-        public override void ShowAccount()
-        {
-            base.ShowAccount();
-            Console.WriteLine("\tthe currency on this account is {0} with an exchange rate {0}->GBP of 1:{1}",
-                this.currency, this.rate);
-            Console.WriteLine("\tthe balance in GBP is {0}", ConvertToGbp());
-        }
-
-        // Class invariants (using Code Contracts): 
-        // invariant: this.balance >= - this.overdraft   
-        [ContractInvariantMethod]
-        public void ObjectInvariant()
-        {
-            Contract.Invariant(this.Balance >= -this.Overdraft);
-        }
-    }
-
-// -----------------------------------------------------------------------------
-
-    class Tester
+    internal static class Program
     {
         // a class for running tests from the Main method
-        class RunTester
+        private class RunTester
         {
             // RunTransactions works on BankAccount and ProperBankAccount
             public void RunTransactions(BankAccount acct)
             {
                 // if it has an overdraft facility, initialise its value
-                ProperBankAccount pacct = acct as ProperBankAccount;
-                if (pacct != null)
+                if (acct is ProperBankAccount pacct)
                 {
                     pacct.Overdraft = 200M;
                 }
 
                 /* or:
-              if (acct is ProperBankAccount) {
-            ((ProperBankAccount)acct).overdraft = 200;
-              }
-              */
+                if (acct is ProperBankAccount) {
+                    ((ProperBankAccount)acct).overdraft = 200;
+                }
+                */
                 acct.ShowAccount();
                 acct.ShowBalance();
+
                 // first, deposit something 
-                decimal x = 600M;
+                var x = 600M;
                 Console.WriteLine("Depositing " + x);
                 acct.Deposit(x);
                 acct.ShowBalance();
+
                 // then, try to withdraw something 
-                decimal y = 400M;
+                var y = 400M;
                 Console.WriteLine("Withdrawing " + y);
                 try
                 {
@@ -119,26 +76,26 @@ namespace BankAccount
 
         public static void Main()
         {
-            RunTester t = new RunTester();
+            var t = new RunTester();
 
             // create a basic account
-            BankAccount mine = new BankAccount("MyAccount");
+            var mine = new BankAccount("MyAccount");
             // create a proper account
-            ProperBankAccount mineOvdft = new ProperBankAccount("MyProperAccount");
+            var mineOvdft = new ProperBankAccount("MyProperAccount");
             // create a proper account
-            ForeignCurrencyAccount foreign = new ForeignCurrencyAccount("ProperBankAccount", "EUR", 0.80);
+            var foreign = new ForeignCurrencyAccount("ProperBankAccount", "EUR", 0.80);
 
             // collect them in an array
-            BankAccount[] accts = new BankAccount[3] {mine, mineOvdft, foreign};
+            var accts = new BankAccount[3] {mine, mineOvdft, foreign};
 
-            for (int i = 0; i < accts.Length; i++)
+            foreach (var t1 in accts)
             {
-                t.RunTransactions(accts[i]); // or: accts[i].RunTrans();
+                t.RunTransactions(t1); // or: accts[i].RunTrans();
             }
 
             // compute the overall sum, always converting to GBP
-            double sum = 0.0;
-            for (int i = 0; i < accts.Length; i++)
+            var sum = 0.0;
+            for (var i = 0; i < accts.Length; i++)
             {
                 try
                 {
@@ -151,27 +108,25 @@ namespace BankAccount
                 }
             }
 
-            System.Console.WriteLine("Total balance (in GBP): {0}", sum);
-            // Main0();
+            Console.WriteLine("Total balance (in GBP): {0}", sum);
+            Main0();
         }
 
-        public static void Main0()
+        private static void Main0()
         {
             // alternative version of the above
             // create a basic account
-            BankAccount mine2 = new BankAccount("My2ndAccount");
+            var mine2 = new BankAccount("My2ndAccount");
             // run transactions
             mine2.RunTrans();
 
             // create a proper account
-            ProperBankAccount mine2Ovdft = new ProperBankAccount("My2ndProperAccount");
-            mine2Ovdft.Overdraft = 250;
+            var mine2Ovdft = new ProperBankAccount("My2ndProperAccount") {Overdraft = 250};
             // run transactions
             mine2Ovdft.RunTrans();
 
             // create a proper account
-            ForeignCurrencyAccount foreign = new ForeignCurrencyAccount("ProperBankAccount", "EUR", 0.80);
-            foreign.Overdraft = 50;
+            var foreign = new ForeignCurrencyAccount("ProperBankAccount", "EUR", 0.80) {Overdraft = 50};
             // run transactions
             foreign.RunTrans();
 

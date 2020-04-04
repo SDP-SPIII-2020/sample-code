@@ -3,37 +3,34 @@ using System.Diagnostics.Contracts;
 
 namespace BankAccount
 {
-    class ForeignCurrencyAccount : ProperBankAccount
+    internal class ForeignCurrencyAccount : ProperBankAccount
     {
         // currency
-        public string currency { get; set; }
+        private string Currency { get; }
 
         // exchange rate
-        public double rate { get; set; }
+        private double Rate { get; }
 
         public ForeignCurrencyAccount(string name, string cur, double rate) : base(name)
         {
-            this.currency = cur;
-            this.rate = rate;
+            Currency = cur;
+            Rate = rate;
         }
 
-        public override double ConvertToGbp()
-        {
-            return (double) this.Balance * this.rate;
-        }
+        public override double ConvertToGbp() => (double) Balance * Rate;
 
         public override void ShowAccount()
         {
             base.ShowAccount();
-            Console.WriteLine("\tthe currency on this account is {0} with an exchange rate {0}->GBP of 1:{1}",
-                this.currency, this.rate);
-            Console.WriteLine("\tthe balance in GBP is {0}", ConvertToGbp());
+            Console.WriteLine(
+                $"\tthe currency on this account is {Currency} with an exchange rate {Currency}->GBP of 1:{Rate}");
+            Console.WriteLine($"\tthe balance in GBP is {ConvertToGbp()}");
         }
 
         // Class invariants (using Code Contracts): 
         // invariant: this.balance >= - this.overdraft   
         [ContractInvariantMethod]
-        public void ObjectInvariant()
+        public new void ObjectInvariant()
         {
             Contract.Invariant(this.Balance >= -this.Overdraft);
         }

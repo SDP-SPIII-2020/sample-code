@@ -2,32 +2,34 @@ using System.Diagnostics.Contracts;
 
 namespace Rationals
 {
-    class Rational
+    internal class Rational
     {
-        int numerator;
-        int denominator;
+        private int _denominator;
 
         public Rational(int numerator, int denominator)
         {
             Contract.Requires(denominator != 0);
 
-            this.numerator = numerator;
-            this.denominator = denominator;
+            Numerator = numerator;
+            Denominator = denominator;
         }
 
-        public int Denominator
+        private int Denominator
         {
             get
             {
                 Contract.Ensures(Contract.Result<int>() != 0);
-                return this.denominator;
+                return _denominator;
             }
+            set => _denominator = value;
         }
 
+        private int Numerator { get; set; }
+
         [ContractInvariantMethod]
-        void ObjectInvariant()
+        private void ObjectInvariant()
         {
-            Contract.Invariant(this.denominator != 0);
+            Contract.Invariant(Denominator != 0);
         }
     }
 }

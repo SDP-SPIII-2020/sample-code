@@ -1,78 +1,84 @@
 // -------------------------------------------------------------
-define CONTRACTS_FULL
-define DEBUG
+
+#define DEBUG
 
 using System;
 using System.Diagnostics.Contracts;
-// Examples from Lecture 3: C# Basics, adapted to use code contracts
 
+// Examples from C# Basics, adapted to use code contracts
 
-class Functions
+namespace Functions
 {
-    static void Main()
+    public static class Functions
     {
-        int[] arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        int x = 0;
-        int good_n = 3;  // OK index
-        int bad_n = 15;  // illegal index
-        int n1 = 7;
-        int n2 = 8;
-        int n3 = 9;
-        System.Console.WriteLine("Testing array operations on this array: " + showArr(arr));
-        System.Console.WriteLine("Get of {0}-th elemnt (out of {1}) = {2}",
-	  good_n, arr.Length, Get(arr, good_n)); // OK
-        System.Console.WriteLine("Get of {0}-th elemnt (out of {1}) = {2}",
-	  bad_n, arr.Length, Get(arr, bad_n)); // throws an illegal index exception, unless checked by pre-condition
-
-        System.Console.WriteLine("Setting the {0}-th elemnt to {1}", n1, x);
-        Set(arr, n1, x);
-        System.Console.WriteLine("Modified array: " + showArr(arr));
-
-        System.Console.WriteLine("SetSteping the {0}-th elemnt to {1}", n2, x);
-        SetStepBroken(arr, n2, x);
-        System.Console.WriteLine("Modified array: " + showArr(arr));
-        System.Console.WriteLine("Index = {0}", n2);
-        System.Console.WriteLine("SetSteping the {0}-th elemnt to {1}", n3, x);
-        SetStep(arr, ref n3, x);
-        System.Console.WriteLine("Modified array: " + showArr(arr));
-        System.Console.WriteLine("Index = {0}", n3);
-    }
-
-    static int Get(int[] arr, int n)
-    {
-        Contract.Requires(n < arr.Length);
-        return arr[n];
-    }
-
-    static void Set(int[] arr, int n, int x)
-    {
-        Contract.Requires(n < arr.Length);
-        arr[n] = x;
-    }
-
-    static void SetStepBroken(int[] arr, int n, int x)
-    {
-        arr[n] = x;
-        n += 1;
-    }
-
-    static void SetStep(int[] arr, ref int n, int x)
-    {
-        arr[n] = x;
-        n += 1;
-    }
-
-    static string showArr(int[] arr)
-    {
-        string s = "";
-        foreach (int i in arr)
+        public static void Main()
         {
-            if (s != "")
-            {
-                s += ',';
-            }
-            s += i.ToString();
+            int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+            var x = 0;
+            const int goodN = 3; // OK index
+            const int badN = 15; // illegal index
+            const int n1 = 7;
+            const int n2 = 8;
+            var n3 = 9;
+
+            Console.WriteLine("Testing array operations on this array: " + ShowArr(arr));
+            Console.WriteLine($"Get of {goodN}-th element (out of {arr.Length}) = {Get(arr, goodN)}"); // OK
+            Console.WriteLine($"Get of {badN}-th element (out of {arr.Length}) = {Get(arr, badN)}");
+            // throws an illegal index exception, unless checked by pre-condition
+
+            Console.WriteLine($"Setting the {n1}-th element to {x}");
+            Set(arr, n1, x);
+            Console.WriteLine("Modified array: " + ShowArr(arr));
+
+            Console.WriteLine($"SetStepping the {n2}-th element to {x}");
+            SetStepBroken(arr, n2, x);
+            Console.WriteLine("Modified array: " + ShowArr(arr));
+            Console.WriteLine($"Index = {n2}");
+            Console.WriteLine($"SetStepping the {n3}-th element to {x}");
+            n3 = SetStep(arr, n3, x);
+            Console.WriteLine("Modified array: " + ShowArr(arr));
+            Console.WriteLine($"Index = {n3}");
         }
-        return s;
+
+        private static int Get(int[] arr, int n)
+        {
+            Contract.Requires(n < arr.Length);
+            return arr[n];
+        }
+
+        private static void Set(int[] arr, int n, int x)
+        {
+            Contract.Requires(n < arr.Length);
+            arr[n] = x;
+        }
+
+        private static void SetStepBroken(int[] arr, int n, int x)
+        {
+            arr[n] = x;
+            n += 1;
+        }
+
+        private static int SetStep(int[] arr, int n, int x)
+        {
+            arr[n] = x;
+            n++;
+            return n;
+        }
+
+        static string ShowArr(int[] arr)
+        {
+            var s = "";
+            foreach (var i in arr)
+            {
+                if (s != "")
+                {
+                    s += ',';
+                }
+
+                s += i.ToString();
+            }
+
+            return s;
+        }
     }
 }

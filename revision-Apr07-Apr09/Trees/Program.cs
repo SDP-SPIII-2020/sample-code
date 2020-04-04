@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace Dependencies
 {
@@ -9,19 +10,16 @@ namespace Dependencies
         public static void Main(string[] args)
         {
             var t = new Tree<int>();
-
+            var rand = new Random();
             var arrFix = System.Enum.GetValues(Tree<int>.Fixity.Infix.GetType());
-            if (args.Length < 1)
-            {
-                Console.WriteLine("Provide int values to add to the tree on the command line ...");
-            }
-            else
+            var values = Enumerable.Range(1, 10).ToArray();
+            var lst = values.ToList().OrderBy(i => rand.Next(101)).ToList();
+            
             {
                 // build tree ...
                 // ToDo: use exceptions to catch non-int values
-                foreach (var s in args)
+                foreach (var i in lst)
                 {
-                    var i = Convert.ToInt32(s);
                     Console.WriteLine($"inserting {i} ...");
                     t.Insert(i);
                 }
