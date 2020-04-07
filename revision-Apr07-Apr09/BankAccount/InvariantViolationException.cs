@@ -5,9 +5,9 @@ namespace BankAccount
     /// <summary>
     /// define an exception, triggered by an invariant violation
     /// </summary>
-    public class InvariantViolation : Exception
+    public class InvariantViolationException : Exception
     {
-        public InvariantViolation(string msg) : base(msg)
+        public InvariantViolationException(string msg) : base(msg)
         {
         }
     }

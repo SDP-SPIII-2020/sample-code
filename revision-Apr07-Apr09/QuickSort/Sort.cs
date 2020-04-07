@@ -26,7 +26,7 @@ namespace QuickSort
             Lt = -1
         };
 
-        // this delegate defines a predicate over the list elemnts; mainly for testing
+        // this delegate defines a predicate over the list elements; mainly for testing
         // see also (using System): public delegate int Comparison<in T>
         public delegate Cmp CmpDelegate(T x, T y);
 
@@ -47,7 +47,7 @@ namespace QuickSort
 
             if (i < 0 || i > array.Length - 1 || j < 0 || j > array.Length - 1)
             {
-                throw new System.Exception("Swap: indices out of bounds");
+                throw new Exception("Swap: indices out of bounds");
             }
 
             if (i == j)
@@ -74,13 +74,13 @@ namespace QuickSort
 #if DEBUG
             if (to - from < 1)
             {
-                throw new System.Exception(
+                throw new Exception(
                     $"Partition: cannot partition a 1 element array (from={from}, to={to}): ");
             }
 #endif
             if (from < 0 || to > array.Length - 1 || pivot < from || pivot > to)
             {
-                throw new System.Exception(
+                throw new Exception(
                     $"Partition: indices out of bounds: from={from}, pivot={pivot}, to={to}, Length={array.Length}");
             }
 
@@ -148,7 +148,7 @@ namespace QuickSort
 #if DEBUG
             if (!IsPartition(array, @from, to, pivot))
             {
-                throw new System.Exception($"segment from {@from} to {to} (pivot {pivot}) is not a partition");
+                throw new Exception($"segment from {@from} to {to} (pivot {pivot}) is not a partition");
             }
 
             Console.WriteLine(str + $" partitioning with pivot index {pivot} value {array[pivot]}... ");
@@ -185,8 +185,7 @@ namespace QuickSort
             {
                 if (_theCmp(array[i], array[i + 1]) == Cmp.Gt)
                 {
-                    // using DELEGATE
-                    throw new System.Exception($"Array not sorted at {i} with {array[i]} > {array[i + 1]}");
+                    throw new Exception($"Array not sorted at {i} with {array[i]} > {array[i + 1]}");
                 }
             }
 
@@ -202,7 +201,7 @@ namespace QuickSort
             {
                 if (!isOk(array[i]))
                 {
-                    // throw new System.Exception($"Fail at {i} ");
+                    // throw new Exception($"Fail at {i} ");
                     return false;
                 }
             }
@@ -239,7 +238,7 @@ namespace QuickSort
         private string Indent(int level)
         {
             var str = "";
-            for (int i = 0; i < level; i++)
+            for (var i = 0; i < level; i++)
             {
                 str += ">";
             }

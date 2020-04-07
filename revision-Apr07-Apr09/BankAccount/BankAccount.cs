@@ -60,7 +60,7 @@ namespace BankAccount
             }
             else
             {
-                throw new InsufficientBalance($"Balance too low: {Balance}");
+                throw new InsufficientBalanceException($"Balance too low: {Balance}");
             }
 
             Contract.Ensures(this.Balance >= 0);
@@ -77,7 +77,7 @@ namespace BankAccount
             Console.WriteLine($"Account Number: {_accountNo}\tAccount Name: {_name}\tCurrent Balance: {Balance}");
 
         public virtual double ConvertToGbp() =>
-            throw new NoConversion("Currency conversion not implemented for a (basic) BankAccount");
+            throw new NoConversionException("Currency conversion not implemented for a (basic) BankAccount");
 
         // Class invariant (using Code Contracts): invariant: this.balance >= 0
         [ContractInvariantMethod]
@@ -89,27 +89,30 @@ namespace BankAccount
             // works on BankAccount and ProperBankAccount
             ShowAccount();
             ShowBalance();
-            Console.WriteLine("Depositing " + 600);
             
+            Console.WriteLine("Depositing " + 600); 
             Deposit(600);
+            
             ShowBalance();
             Console.WriteLine("Withdrawing " + 400);
+            
             try
             {
                 Withdraw(400);
             }
-            catch (InsufficientBalance e)
+            catch (InsufficientBalanceException e)
             {
                 Console.WriteLine($"InsufficientBalance {GetBalance()} for withdrawal of {400}");
             }
 
             ShowBalance();
+            
             Console.WriteLine("Withdrawing " + 400);
             try
             {
                 Withdraw(400);
             }
-            catch (InsufficientBalance e)
+            catch (InsufficientBalanceException e)
             {
                 Console.WriteLine($"InsufficientBalance {GetBalance()} for withdrawal of {400}");
             }

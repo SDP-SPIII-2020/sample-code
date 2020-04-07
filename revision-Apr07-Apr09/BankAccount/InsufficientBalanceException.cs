@@ -5,9 +5,9 @@ namespace BankAccount
     /// <summary>
     /// define an exception, triggered by the balance being too low
     /// </summary>
-    public class InsufficientBalance : Exception
+    public class InsufficientBalanceException : Exception
     {
-        public InsufficientBalance(string msg) : base(msg)
+        public InsufficientBalanceException(string msg) : base(msg)
         {
         }
     }

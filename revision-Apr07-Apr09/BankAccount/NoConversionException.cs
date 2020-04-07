@@ -3,9 +3,9 @@ namespace BankAccount
     /// <summary>
     /// currency conversion not available for this account
     /// </summary>
-    public class NoConversion : System.Exception
+    public class NoConversionException : System.Exception
     {
-        public NoConversion(string msg) : base(msg)
+        public NoConversionException(string msg) : base(msg)
         {
         }
     }

@@ -3,7 +3,7 @@ using System.Diagnostics.Contracts;
 
 namespace BankAccount
 {
-    class ProperBankAccount : BankAccount
+    internal class ProperBankAccount : BankAccount
     {
         // overdraft field, with default get and set properties
         public decimal Overdraft { get; set; }
@@ -11,13 +11,11 @@ namespace BankAccount
         // constructor (overloaded)
         public ProperBankAccount(string name) : base(name)
         {
-            // nothing; use set property on overdraft
         }
 
         // constructor (overloaded): fixed account number
         public ProperBankAccount(ulong no, string name) : base(no, name)
         {
-            // nothing; use set property on overdraft
         }
 
         // Deposit is inherited from BankAccount
@@ -32,7 +30,7 @@ namespace BankAccount
             }
             else
             {
-                throw new InsufficientBalance($"Balance (including overdraft of {Overdraft}) too low: {Balance}");
+                throw new InsufficientBalanceException($"Balance (including overdraft of {Overdraft}) too low: {Balance}");
             }
 
             Contract.Ensures(this.Balance + this.Overdraft >= 0);

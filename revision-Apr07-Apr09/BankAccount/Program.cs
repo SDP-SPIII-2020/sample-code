@@ -52,7 +52,7 @@ namespace BankAccount
                 {
                     acct.Withdraw(y);
                 }
-                catch (InsufficientBalance e)
+                catch (InsufficientBalanceException e)
                 {
                     Console.WriteLine("InsufficientBalance {0} for withdrawl of {1}", acct.GetBalance(), y);
                 }
@@ -64,7 +64,7 @@ namespace BankAccount
                 {
                     acct.Withdraw(y);
                 }
-                catch (InsufficientBalance e)
+                catch (InsufficientBalanceException e)
                 {
                     Console.WriteLine("InsufficientBalance {0} for withdrawl of {1}", acct.GetBalance(), y);
                 }
@@ -101,7 +101,7 @@ namespace BankAccount
                 {
                     sum += accts[i].ConvertToGbp(); // or: accts[i].RunTrans();
                 }
-                catch (NoConversion e)
+                catch (NoConversionException e)
                 {
                     Console.WriteLine("Ignoring {0}-th account in total balance: cannot convert to GBP", i);
                     accts[i].ShowAccount();
@@ -135,7 +135,7 @@ namespace BankAccount
                 Console.WriteLine("Trying to withdraw 300");
                 mine2Ovdft.Withdraw(300);
             }
-            catch (InsufficientBalance e)
+            catch (InsufficientBalanceException e)
             {
                 Console.WriteLine("InsufficientBalance {0} for withdrawl of {1}", mine2Ovdft.GetBalance(), 300);
             }
