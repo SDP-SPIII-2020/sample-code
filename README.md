@@ -1,6 +1,8 @@
 
 ## Example code from the SDP/SPIII class — Spring 2020
 
+This list is incomplete...
+
 + `Autofac-Examples`  
 	Dependency Injection framework
 + `ClassesQuickstart`  
@@ -40,8 +42,6 @@
 + `prog-cs-8-examples`  
 	Source code from "Programming C# 8.0" by Ian Griffiths  
 	Published by O'Reilly Media, Inc., 2019
-+ `staticinterface`  
-	How to reference static methods in an `interface`.
 + ...
 
 ### Credits
