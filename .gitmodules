@@ -16,11 +16,6 @@
 [submodule "dive-into-design-patterns-book-code"]
 	path = dive-into-design-patterns-book-code
 	url = https://github.com/SDP-SPIII-2020/dive-into-design-patterns-book-code.git
-[submodule "ComplexNumbersExample"]
-	url = https://github.com/SDP-SPIII-2020/example-complex-numbers.git
 [submodule "csharp-design-patterns"]
 	path = csharp-design-patterns
 	url = https://github.com/CodeMazeBlog/csharp-design-patterns.git
-[submodule "example-complex-numbers"]
-	path = example-complex-numbers
-	url = https://github.com/SDP-SPIII-2020/example-complex-numbers.git
