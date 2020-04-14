@@ -3,11 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <RootNamespace>help_session_Apr12</RootNamespace>
+        <RootNamespace>PredsVsDelegates</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-      <PackageReference Include="LanguageExt.Core" Version="3.4.20-beta" />
-    </ItemGroup>
 
 </Project>
