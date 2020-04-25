@@ -11,8 +11,15 @@ namespace Parse
 
         public static void Main(string[] args)
         {
-            "Friday".Parse<DayOfWeek>(); // => Some(DayOfWeek.Friday)
-            "Freeday".Parse<DayOfWeek>(); // => None
+            var s = "Friday".Parse<DayOfWeek>(); // => Some(DayOfWeek.Friday)
+            Console.WriteLine(s);
+            s = "Freeday".Parse<DayOfWeek>(); // => None
+            Console.WriteLine(s);
+
+            var t = Enum.Parse<DayOfWeek>("Friday"); // => Some(DayOfWeek.Friday)
+            Console.WriteLine(t);
+            t = Enum.Parse<DayOfWeek>("Freeday"); // => None
+            Console.WriteLine(t);
         }
     }
 }
